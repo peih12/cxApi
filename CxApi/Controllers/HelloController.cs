@@ -2,25 +2,29 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CxApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CxApi.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class HelloController : Controller
     {
-        // GET api/values
+        // GET api/hello
         [HttpGet]
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new string[] { "value1", "value2" };
+            return "hello who?";
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        // GET api/hello/world
+        [HttpGet("{name}")]
+        public JsonResult Get(string name)
         {
-            return "value";
+            var response = new HelloJsonResponse
+            { Prompt = String.Format("Hello {0}", name) };
+            
+            return Json(response);
         }
 
         // POST api/values
