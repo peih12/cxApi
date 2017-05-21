@@ -1,3 +1,5 @@
 # Ignore C# build files
 bin/
 obj/
+../CxModel/bin/
+../CxModel/obj/
