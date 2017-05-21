@@ -1,0 +1,3 @@
+# Ignore C# build files
+bin/
+obj/
