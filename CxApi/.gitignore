@@ -1,5 +1,5 @@
 # Ignore C# build files
-bin/
-obj/
+CxApi/bin/
+CxApi/obj/
 ../CxModel/bin/
 ../CxModel/obj/

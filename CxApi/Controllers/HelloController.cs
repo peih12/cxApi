@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CxApi.Models;
+using CxModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CxApi.Controllers
